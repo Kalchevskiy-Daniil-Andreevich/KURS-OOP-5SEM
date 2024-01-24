@@ -1,0 +1,20 @@
+﻿ApplicationWPF
+
+
+winexe
+C#
+.cs
+D:\Курсовой ООП\ApplicationWPF\ApplicationWPF\obj\Debug\net6.0-windows\
+ApplicationWPF
+none
+false
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+D:\Курсовой ООП\ApplicationWPF\ApplicationWPF\App.xaml
+181955752655
+
+55-1575867745
+214558713332
+MainWindow.xaml;Views\Abonements.xaml;Views\AddAbonement.xaml;Views\AddEmployee.xaml;Views\AdminClient.xaml;Views\AdminClientAdd.xaml;Views\AdminConfirmRequest.xaml;Views\AdminEmployee.xaml;Views\AdministratorPanel.xaml;Views\ChangeAbonement.xaml;Views\ChangeClient.xaml;Views\ChangeEmployee.xaml;Views\Login.xaml;Views\MoreDetailsAbonements.xaml;Views\Profile.xaml;Views\Registration.xaml;Views\RequestAbon.xaml;Views\Shedule.xaml;
+
+False
+

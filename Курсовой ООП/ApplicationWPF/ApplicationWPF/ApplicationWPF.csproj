@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\0.jpg" />
+    <None Remove="Resources\1.jpg" />
+    <None Remove="Resources\2.jpg" />
+    <None Remove="Resources\3.png" />
+    <None Remove="Resources\4.jpg" />
+    <None Remove="Resources\abonement.png" />
+    <None Remove="Resources\add.png" />
+    <None Remove="Resources\app.png" />
+    <None Remove="Resources\clients.png" />
+    <None Remove="Resources\employee.png" />
+    <None Remove="Resources\maga.jpg" />
+    <None Remove="Resources\main.jpg" />
+    <None Remove="Resources\mainWin.png" />
+    <None Remove="Resources\mana.jpg" />
+    <None Remove="Resources\menu.png" />
+    <None Remove="Resources\Profile.png" />
+    <None Remove="Resources\request.png" />
+    <None Remove="Resources\return.png" />
+    <None Remove="Resources\returnMenu.png" />
+    <None Remove="Resources\shedule.png" />
+    <None Remove="Resources\typeAbon.png" />
+    <None Remove="Resources\z.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.25" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\0.jpg" />
+    <Resource Include="Resources\1.jpg" />
+    <Resource Include="Resources\2.jpg" />
+    <Resource Include="Resources\3.png" />
+    <Resource Include="Resources\4.jpg" />
+    <Resource Include="Resources\abonement.png" />
+    <Resource Include="Resources\add.png" />
+    <Resource Include="Resources\app.png" />
+    <Resource Include="Resources\clients.png" />
+    <Resource Include="Resources\employee.png" />
+    <Resource Include="Resources\maga.jpg" />
+    <Resource Include="Resources\main.jpg" />
+    <Resource Include="Resources\mainWin.png" />
+    <Resource Include="Resources\mana.jpg" />
+    <Resource Include="Resources\menu.png" />
+    <Resource Include="Resources\Profile.png" />
+    <Resource Include="Resources\request.png" />
+    <Resource Include="Resources\return.png" />
+    <Resource Include="Resources\returnMenu.png" />
+    <Resource Include="Resources\shedule.png" />
+    <Resource Include="Resources\typeAbon.png" />
+    <Resource Include="Resources\z.jpg" />
+  </ItemGroup>
+
+</Project>

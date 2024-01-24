@@ -1,0 +1,77 @@
+﻿<Window x:Class="ApplicationWPF.Views.RequestAbon"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ApplicationWPF.Classes"
+        xmlns:vm="clr-namespace:ApplicationWPF.ViewModels"
+        mc:Ignorable="d"
+        Title="RequestAbon" Height="225" Width="550" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Window.DataContext>
+        <vm:RequestAbonViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <Style TargetType="Menu">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Width" Value="248"/>
+            <Setter Property="Margin" Value="0,0,0,10"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="#007ACC"/>
+            <Setter Property="Background" Value="#F0F0F0"/>
+            <Setter Property="Foreground" Value="#333333"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="CheckBox">
+            <Setter Property="Margin" Value="0,0,0,10"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="120"/>
+            <Setter Property="Margin" Value="0,0,0,10"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Background" Value="#007ACC"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#005C99"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <local:ByteArrayToImage x:Key="ByteArrayToImage"/>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17*"/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="Header" Height="60" VerticalAlignment ="Top" Background="#1F75FE">
+            <TextBlock Text="Страница оформления" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" TextAlignment="Center" Foreground="White" RenderTransformOrigin="-0.341,0.456"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="20 0">
+                <Menu HorizontalAlignment="Right" VerticalAlignment="Center">
+                    <MenuItem Header="Выход" Command="{Binding ExitCommand}"/>
+                </Menu>
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Margin="0,139,0,0" Height="111" VerticalAlignment="Top">
+            <CheckBox Content="Подтвердить заявку" IsChecked="{Binding IsConfirmationChecked}" Width="130"/>
+            <Button Content="Подтвердить" Command="{Binding ConfirmRequestCommand}"/>
+        </StackPanel>
+        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" Text="{Binding IdAbonement, Mode=TwoWay}" Width="530" RenderTransformOrigin="0.2,-0.093" Margin="0,106,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,85,0,0" TextWrapping="Wrap" Text="Введите идентификатор абонемента для оформление:" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

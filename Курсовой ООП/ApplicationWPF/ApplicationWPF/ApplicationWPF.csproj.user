@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\Abonements.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddAbonement.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddEmployee.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AdminClient.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AdminClientAdd.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AdminConfirmRequest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AdminEmployee.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AdministratorPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ChangeAbonement.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ChangeClient.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ChangeEmployee.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MoreDetailsAbonements.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Profile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Registration.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\RequestAbon.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Shedule.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Abonements.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddAbonement.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddEmployee.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AdminClient.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AdminClientAdd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AdminConfirmRequest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AdminEmployee.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AdministratorPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ChangeAbonement.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ChangeClient.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ChangeEmployee.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MoreDetailsAbonements.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Profile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Registration.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\RequestAbon.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Shedule.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
